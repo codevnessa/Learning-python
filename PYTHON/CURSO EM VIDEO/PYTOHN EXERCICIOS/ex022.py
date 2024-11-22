@@ -1,0 +1,12 @@
+nome = input('Qual seu nome completo? ')
+print('Analisando seu nome...')
+print('SEU NOME EM LETRAS MAISCULAS É:',nome.upper())
+print('seu nome em letras minusculas é:',nome.lower())
+se = nome.replace(' ','')
+print(se)
+print('Seu nome sem espaços tem: {} caracteres'.format(len(se)))
+print('Seu nome com espaços tem: {} caracteres'.format(len(se)))
+dv = nome.split()
+dv2 = dv[0]
+total = len(dv2)
+print('Seu primeiro nome é {}, e ele tem no total de {} letras.'.format(nome, total))
