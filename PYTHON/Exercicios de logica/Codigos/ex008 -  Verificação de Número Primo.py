@@ -1,5 +1,5 @@
 # Define a função eh_primo que verifica se um número é primo
-def eh_primo(n):
+def e_primo(n):
     # Se o número for menor ou igual a 1, não é primo
     if n <= 1:
         return False
@@ -15,7 +15,7 @@ def eh_primo(n):
 n = int(input("Digite um número: "))
 
 # Verifica se o número é primo usando a função eh_primo
-if eh_primo(n):
+if e_primo(n):
     print(f"{n} é primo.")
 else:
     print(f"{n} não é primo.")
