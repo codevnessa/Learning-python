@@ -1,4 +1,4 @@
-# Impressão do nome completo e menu
+'8'# Impressão do nome completo e menu
 print('-' * 16 + '   DELIVERY DE COMIDA JAPONESA  ' + '-' * 16)
 print('-' * 65)
 print('-' * 27 + ' CARDÁPIO ' + '-' * 28)
