@@ -1,4 +1,4 @@
-# Mensagem inicial informando ao usuário como sair do programa
+ # Mensagem inicial informando ao usuário como sair do programa
 print("Digite 'sair' a qualquer momento para encerrar o programa.\n")
 
 # Loop infinito para permitir que o usuário insira palavras repetidamente
