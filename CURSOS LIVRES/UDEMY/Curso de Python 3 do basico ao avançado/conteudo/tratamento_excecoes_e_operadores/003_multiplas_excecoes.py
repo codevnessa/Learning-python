@@ -23,7 +23,6 @@ except:
     print("Ocorreu um erro desconhecido!")
 
 # Explicação:
-# O programa pede ao usuário para digitar um número.
 # Se o usuário digitar 0, ocorre um ZeroDivisionError.
 # Se o usuário digitar algo que não seja um número, ocorre um ValueError.
 # Se ocorrer qualquer outro erro, o último bloco except captura e trata o erro.

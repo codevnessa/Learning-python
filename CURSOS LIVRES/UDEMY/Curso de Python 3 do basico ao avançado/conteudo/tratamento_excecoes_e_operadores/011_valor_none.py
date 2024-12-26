@@ -15,4 +15,4 @@ else:
 # Explicação:
 # A variável resultado é inicializada com None.
 # O programa verifica se resultado é None usando o operador is.
-# Se for None, exibe a mensagem "A variável ainda não tem valor.".
+# Se for None, exibe a mensagem "A variável ainda não tem valor."
