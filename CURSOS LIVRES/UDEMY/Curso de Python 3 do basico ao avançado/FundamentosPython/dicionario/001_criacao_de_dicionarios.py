@@ -5,7 +5,7 @@ Os dicionários são mutáveis, ou seja, podem ser alterados após a criação.
 Existem várias maneiras de criar dicionários em Python:
 1. Usando chaves {} e pares chave-valor.
 2. Usando a função dict().
-3. Usando compreensão de dicionários (será abordado em outro arquivo).
+3. Usando compreensão de dicionários 
 """
 
 # Método 1: Usando chaves {} e pares chave-valor
