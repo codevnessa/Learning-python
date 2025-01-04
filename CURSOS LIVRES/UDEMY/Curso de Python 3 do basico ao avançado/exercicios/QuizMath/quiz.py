@@ -13,13 +13,16 @@ for pergunta in perguntas:
     if resposta_usuario == pergunta['Resposta']:
         print('Resposta correta!\n')
         acertos += 1
+
     # Verifica se o usuário escolheu uma opção válida
     elif resposta_usuario in ['1', '2', '3', '4']:
+
         if pergunta['Opcoes'][int(resposta_usuario) - 1] == pergunta['Resposta']:
             print('Resposta correta!\n')
             acertos += 1
         else:
             print('Resposta incorreta!\n')
+
     else:
         print('Resposta inválida ou incorreta!\n')
 

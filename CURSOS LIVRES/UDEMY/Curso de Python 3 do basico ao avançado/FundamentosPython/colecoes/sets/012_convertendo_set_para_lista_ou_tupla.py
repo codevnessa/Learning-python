@@ -16,6 +16,6 @@ print("Tupla:", tupla_numeros)
 """
 - numeros = {1, 2, 3, 4, 5}: Criando um conjunto.
 - lista_numeros = list(numeros): Convertendo o conjunto em uma lista.
-- tupla_numeros = tuple(numeros): Convertendo o conjunto em uma tupla.
+tupla_numeros = tuple(numeros): Convertendo o conjunto em uma tupla.
 - print(...): Exibe a lista e a tupla resultantes.
 """

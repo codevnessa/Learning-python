@@ -7,7 +7,7 @@ animais = {"gato", "cachorro", "pássaro"}
 animais.add("peixe")
 
 # Removendo um item
-animais.discard("pássaro")
+animais.discard("gato").upperCase()
 
 # Verificando o tamanho do conjunto
 tamanho = len(animais)
