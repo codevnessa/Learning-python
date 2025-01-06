@@ -18,7 +18,7 @@ def soma(x=None, y=None, z=None):
 # Chamadas da função soma com diferentes argumentos
 
 # 1. x=1, y=2, z=None
-soma(1, 2)
+soma(1)
 # Saída esperada: x=1 y=2 3
 
 # 2. x=3, y=5, z=None
