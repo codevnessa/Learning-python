@@ -1,4 +1,4 @@
-from package.modulo_b import fala_oi
+from package.modulo_b import falaroi
 __all__ = [
     'soma',
     'variavel',

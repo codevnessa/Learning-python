@@ -1,4 +1,4 @@
 from package.modulo import *
 
-def fala_oi():
+def falaroi():
     print('oi')
