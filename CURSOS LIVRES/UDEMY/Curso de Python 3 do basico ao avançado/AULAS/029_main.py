@@ -1,12 +1,11 @@
 from sys import path
-from package import modulo
-from package.modulo import *
+from package.modulo import fala_oi, soma
+#from package.modulo import *
 
 print(__name__)
-print()
-print(*path, sep='\n')
-print()
-print(soma(2,5))
-print()
-print(variavel)
-print(nova_variavel)
+#print(*path, sep='\n')
+print(soma(2, 5))
+#print(variavel)
+#print(nova_variavel)
+fala_oi()
+
