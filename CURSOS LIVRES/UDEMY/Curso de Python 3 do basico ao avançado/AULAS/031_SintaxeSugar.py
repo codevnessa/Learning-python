@@ -10,6 +10,7 @@ def funcao(func):
     return interna
 
 @funcao
+
 def inverter(string):
     return string[::-1]
 
