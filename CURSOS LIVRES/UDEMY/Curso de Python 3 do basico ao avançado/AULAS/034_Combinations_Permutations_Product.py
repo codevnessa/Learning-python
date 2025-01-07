@@ -20,6 +20,7 @@ camisetas = [
 ]
 
 
+
 separador = ( '='*40)
 # Gera todas as combinações possíveis de 3 pessoas (a ordem não importa)
 print(separador)
