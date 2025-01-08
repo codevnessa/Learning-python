@@ -7,7 +7,7 @@ with open(caminho_arquivo, 'w') as arquivo:
     arquivo.write('Arquivo vai ser fechado\n')  # Escreve no arquivo
 
 # Segundo bloco: Reabre o arquivo em modo 'w+' (escrita e leitura)
-with open(caminho_arquivo, 'w+') as arquivo:
+#with open(caminho_arquivo, 'w+') as arquivo:
     arquivo.write('# Linha 1\n')  
     arquivo.write('# Linha 2\n')  
     arquivo.writelines(('# Linha 3\n', '# Linha 4\n'))
