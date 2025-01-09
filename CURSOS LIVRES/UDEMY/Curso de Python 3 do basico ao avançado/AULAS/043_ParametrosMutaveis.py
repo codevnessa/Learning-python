@@ -1,1 +1,0 @@
-def adicona_clien

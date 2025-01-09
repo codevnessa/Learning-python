@@ -25,7 +25,7 @@ def carregar_tarefas():
 # Função para salvar tarefas no arquivo JSON
 def salvar_tarefas():
     try:
-        caminho_arquivo = os.path.abspath('tarefas.json')
+        caminho_arquivo = os.path.abspath('Curso_Python\\exercicios\\ListadeTarefas\\tarefas.json')
         print(f'Salvando tarefas em: {caminho_arquivo}')
         with open('tarefas.json', 'w') as arquivo:
             json.dump(lista_tarefas, arquivo, indent=4)  # indent=4 para melhorar a legibilidade
@@ -149,7 +149,7 @@ def consultarTarefas():
 def exibir_tarefa(tarefa):
     classificacao_texto = {
         '1': 'Alta prioridade',
-        '2': 'Média prioridade',
+        '2': 'Média priorid ade',
         '3': 'Baixa prioridade'
     }
     print(f"ID: {tarefa['id']}")
