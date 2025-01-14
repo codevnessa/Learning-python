@@ -10,7 +10,7 @@ class Log:
     def log_error(self,msg):
         return self._log(f'Error: {msg}')
     
-    def log_sucess(self,msg):
+    def log_sucess(self,msg):\
         return self._log(f'Sucess: {msg}')
         
     

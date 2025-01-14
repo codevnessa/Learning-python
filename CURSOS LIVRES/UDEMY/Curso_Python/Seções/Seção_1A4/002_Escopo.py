@@ -18,5 +18,5 @@ def minha_funcao():
 minha_funcao()
 
 # Isso vai dar erro, porque variavel_local só existe dentro da função
-print(variavel_local)
+print(variavel_global)
 
