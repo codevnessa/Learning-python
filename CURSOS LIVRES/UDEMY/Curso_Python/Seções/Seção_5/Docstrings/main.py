@@ -1,7 +1,7 @@
-import arquivo
+import DocStrings
 
-print(dir(arquivo))
-print(arquivo.__doc__)
-print(arquivo.__file__)
-print(arquivo.__name__)
-help(arquivo)
+print(dir(DocStrings))
+print(DocStrings.__doc__)
+print(DocStrings.__file__)
+print(DocStrings.__name__)
+help(DocStrings)
