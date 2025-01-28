@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 
 # Classe Abstrata Conta
 class Conta(ABC):
-    def __init__(self, agencia, numero_conta, saldo):
+    def __init__(self, agencia: int, conta: int, saldo: float = 0):
         self._agencia = agencia
-        self._numero_conta = numero_conta
+        self._numero_conta = conta
         self._saldo = saldo
 
     @property
@@ -12,14 +12,14 @@ class Conta(ABC):
         return self._agencia
 
     @property
-    def numero_conta(self):
+    def conta(self):
         return self._numero_conta
 
     @property
     def saldo(self):
         return self._saldo
 
-    def depositar(self, valor):
+    def depositar(self, valor: float) -> float:
         if valor > 0:
             self._saldo += valor
             print(f"Depósito de R${valor:.2f} realizado. Novo saldo: R${self._saldo:.2f}")
@@ -27,13 +27,13 @@ class Conta(ABC):
             print("Valor de depósito inválido.")
 
     @abstractmethod
-    def sacar(self, valor):
-        pass
+    def sacar(self, valor: float) -> float: ...
+
 
 # Classe ContaCorrente
 class ContaCorrente(Conta):
-    def __init__(self, agencia, numero_conta, saldo, limite=100):
-        super().__init__(agencia, numero_conta, saldo)
+    def __init__(self, agencia, conta, saldo, limite=100):
+        super().__init__(agencia, conta, saldo)
         self._limite = limite
 
     def sacar(self, valor):
@@ -87,14 +87,14 @@ class Banco:
         self._clientes.append(cliente)
         self._contas.append(cliente.conta)
 
-    def autenticar(self, cliente, agencia, numero_conta):
+    def autenticar(self, cliente, agencia, conta):
         if cliente in self._clientes:
-            if cliente.conta.agencia == agencia and cliente.conta.numero_conta == numero_conta:
+            if cliente.conta.agencia == agencia and cliente.conta.conta == conta:
                 return True
         return False
 
-    def sacar(self, cliente, agencia, numero_conta, valor):
-        if self.autenticar(cliente, agencia, numero_conta):
+    def sacar(self, cliente, agencia, conta, valor):
+        if self.autenticar(cliente, agencia, conta):
             cliente.conta.sacar(valor)
         else:
             print("Autenticação falhou. Saque não permitido.")
